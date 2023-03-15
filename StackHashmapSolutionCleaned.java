@@ -11,9 +11,9 @@ class CleanedSolution {
 
   public boolean isValid(String stringToValidate) {
 
-    // Code is implementing the pseudocode in the README.md file.
+    // Implementing the pseudocode in the README.md file.
 
-    Stack<Character> brackets = new Stack<>();
+    Stack<Character> openingBrackets = new Stack<>();
 
     Map<Character, Character> closingBracketToOpening = new HashMap<>();
 
@@ -25,21 +25,21 @@ class CleanedSolution {
 
       // push an opening bracket to the stack
       if (!closingBracketToOpening.containsKey(character)) {
-        brackets.push(character);
+        openingBrackets.push(character);
         continue;
       }
 
       // closing bracket cannot be paired
-      if (brackets.size() == 0)
+      if (openingBrackets.size() == 0)
         return false;
 
-      char lastOpeningBracket = brackets.pop();
+      char lastOpeningBracket = openingBrackets.pop();
       if (lastOpeningBracket != closingBracketToOpening.get(character))
         return false;
 
     }
 
-    if (brackets.size() == 0)
+    if (openingBrackets.size() == 0)
       return true;
 
     return false;
