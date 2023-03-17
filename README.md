@@ -28,7 +28,7 @@ The pseudocode of the solution algorithm is the following.
 6. When the iteration is done, check if the stack is empty. If so, return `true`. Otherwise, return `false`.
 
 ## The cleaning example
-The file `StackHashmapSolution.java` contains a quickly written solution to the problem in Java. It has many areas for clean coding improvement. The improved code is found in `StackHashmapSolutionCleaned.java`.
+The file `Solution.java` contains a quickly written solution to the problem in Java. It has many areas for clean coding improvement. The improved code is found in `CleanedSolution.java`.
 
 ## Compiling and running
 To compile and run the code, simply clicking the play button is enough.
