@@ -30,6 +30,9 @@ The pseudocode of the solution algorithm is the following.
 ## The cleaning example
 The file `Solution.java` contains a quickly written solution to the problem in Java. It has many areas for clean coding improvement. The improved code is found in `CleanedSolution.java`.
 
+## Your turn
+The file `StackOnlySolution` contains a more spaghetti code solution to the same problem. Clean this one as exercise.
+
 ## Compiling and running
 To compile and run the code, simply clicking the play button is enough.
 
